@@ -1,7 +1,10 @@
 package ch.eglisi.texteditor.controller;
 
+import ch.eglisi.texteditor.view.ViewUtil;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
+import javax.swing.text.View;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -60,8 +63,8 @@ public final class FileHandling {
             return fileChooser.getSelectedFile();
         } else {
             if (returnValue == JFileChooser.ERROR_OPTION) {
+                ViewUtil.showErrorMessage("File Chooser Error", "Beim Auswählen der Datei ist ein Fehler aufgetreten");
                 LOGGER.log(Level.SEVERE, "Error occured while chosing a file");
-                // TODO: Message to user?
             }
             return null;
         }
