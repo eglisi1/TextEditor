@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Set Up Maven Project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/ui/TextEditorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" afterDir="false" />
     </list>
+    <list id="6add4f31-d2e2-48ce-9232-a946207f38ce" name="Add Basic Swing UI" comment="" />
+    <list id="9ac84a46-e55f-40f8-9eca-cdb266cd8c8a" name="Revert &quot;Add Basic Swing UI&quot;" comment="Revert &quot;Add Basic Swing UI&quot;&#10;&#10;This reverts commit 80a5278b" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="proofread" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,6 +70,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -77,6 +93,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="" />
+      <changelist id="6add4f31-d2e2-48ce-9232-a946207f38ce" name="Add Basic Swing UI" comment="" />
       <created>1614271433566</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -84,7 +101,7 @@
       <workItem from="1614271434661" duration="524000" />
       <workItem from="1614283712638" duration="2995000" />
       <workItem from="1614330397802" duration="1793000" />
-      <workItem from="1614334869319" duration="299000" />
+      <workItem from="1614334869319" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up Maven Project">
       <created>1614271905166</created>
@@ -107,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614283956610</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Basic Swing UI">
+      <created>1614335397010</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614335397010</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Basic Swing UI">
+      <created>1614335457945</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614335457945</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +161,11 @@
     <MESSAGE value="Set Up Maven Project" />
     <MESSAGE value="Add unversioned Files" />
     <MESSAGE value="Add project Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project Files" />
+    <MESSAGE value="Add Basic Swing UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Basic Swing UI" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

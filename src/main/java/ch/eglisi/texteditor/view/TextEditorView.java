@@ -1,6 +1,11 @@
 package ch.eglisi.texteditor.view;
 
-import javax.swing.*;
+import ch.eglisi.texteditor.controller.FileHandling;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 
 public class TextEditorView extends JFrame {
@@ -11,15 +16,28 @@ public class TextEditorView extends JFrame {
     public TextEditorView(String title) {
         super(title);
         initComponents();
+        styleUI();
     }
 
+    /**
+     * Initialize all Components.
+     */
     private void initComponents() {
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         initTabs();
+    }
+
+    /**
+     * Styles th UI
+     */
+    private void styleUI() {
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(800, 400);
         setVisible(true);
     }
 
+    /**
+     * Initialize the Tab.
+     */
     private void initTabs() {
         var menuBar = new JMenuBar();
 
@@ -29,15 +47,15 @@ public class TextEditorView extends JFrame {
 
         // Create Items for File Menu
         // create Open File
-        var openFile = createMenuItem("Datei öffnen...", e -> openFile());
+        var openFile = createMenuItem("Datei öffnen...", e -> FileHandling.openFile());
         fileMenu.add(openFile);
 
         // create New File
-        var newFile = createMenuItem("Neue Datei...", e -> createFile());
+        var newFile = createMenuItem("Neue Datei...", e -> FileHandling.createFile());
         fileMenu.add(newFile);
 
         fileMenu.addSeparator();
-        var saveFile = createMenuItem("Datei speichern", e -> saveFile());
+        var saveFile = createMenuItem("Datei speichern", e -> FileHandling.saveFile());
         fileMenu.add(saveFile);
 
         setJMenuBar(menuBar);
@@ -53,17 +71,5 @@ public class TextEditorView extends JFrame {
         var menuItem = new JMenuItem(title);
         menuItem.addActionListener(actionListener);
         return menuItem;
-    }
-
-    private void openFile() {
-        System.out.println("Open File");
-    }
-
-    private void createFile() {
-        System.out.println("Open File");
-    }
-
-    private void saveFile() {
-        System.out.println("Save File");
     }
 }
