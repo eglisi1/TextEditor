@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Set Up Maven Project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/controller/FileHandlingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TextEditor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <list id="6add4f31-d2e2-48ce-9232-a946207f38ce" name="Add Basic Swing UI" comment="" />
     <list id="9ac84a46-e55f-40f8-9eca-cdb266cd8c8a" name="Revert &quot;Add Basic Swing UI&quot;" comment="Revert &quot;Add Basic Swing UI&quot;&#10;&#10;This reverts commit 80a5278b" />
@@ -20,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,6 +57,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/ui/open_file" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,8 +72,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/ui/open_file" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch.eglisi.texteditor.controller" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.clean install">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.eglisi.texteditor.main.Main" />
       <module name="TextEditor" />
@@ -83,6 +106,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="clean install" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Maven.clean install" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -101,7 +154,9 @@
       <workItem from="1614271434661" duration="524000" />
       <workItem from="1614283712638" duration="2995000" />
       <workItem from="1614330397802" duration="1793000" />
-      <workItem from="1614334869319" duration="2155000" />
+      <workItem from="1614334869319" duration="5233000" />
+      <workItem from="1614344551102" duration="707000" />
+      <workItem from="1614355230833" duration="2518000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up Maven Project">
       <created>1614271905166</created>
@@ -138,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614335457945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Controller for Logic">
+      <created>1614340734552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614340734552</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +224,8 @@
     <MESSAGE value="Add unversioned Files" />
     <MESSAGE value="Add project Files" />
     <MESSAGE value="Add Basic Swing UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Basic Swing UI" />
+    <MESSAGE value="Add Controller for Logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Controller for Logic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -54,9 +54,9 @@ public class TextEditorView extends JFrame {
         var newFile = createMenuItem("Neue Datei...", e -> FileHandling.createFile());
         fileMenu.add(newFile);
 
-        fileMenu.addSeparator();
+        /*fileMenu.addSeparator();
         var saveFile = createMenuItem("Datei speichern", e -> FileHandling.saveFile());
-        fileMenu.add(saveFile);
+        fileMenu.add(saveFile);*/
 
         setJMenuBar(menuBar);
     }
