@@ -4,7 +4,6 @@ import ch.eglisi.texteditor.view.ViewUtil;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
-import javax.swing.text.View;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,12 +15,12 @@ import java.util.logging.Logger;
 public final class FileHandling {
     private static final Logger LOGGER = Logger.getLogger("Logger");
 
-    private FileHandling() {}
+    private FileHandling() {
+    }
 
     public static void createFile() {
         System.out.println("Open File");
     }
-
 
     public static void saveFile(Path file, List<String> content) {
         try {
@@ -53,6 +52,7 @@ public final class FileHandling {
     /**
      * Chooses a File and returns the File if selected.
      * If an Error occurs or the Action is cancelled return null
+     *
      * @param fileChooser the File Chooser to select a file
      * @return the selected file or null
      */
