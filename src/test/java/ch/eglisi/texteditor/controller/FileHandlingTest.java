@@ -1,7 +1,7 @@
 package ch.eglisi.texteditor.controller;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -16,13 +16,13 @@ import java.util.stream.Stream;
 
 class FileHandlingTest {
 
-    static Path file;
-    static List<String> originalContent;
-    static List<String> addContent;
-    static List<String> expectedResult;
+    private Path file;
+    private List<String> originalContent;
+    private List<String> addContent;
+    private List<String> expectedResult;
 
-    @BeforeAll
-    static void init() throws IOException {
+    @BeforeEach
+    void setUp() throws IOException {
         file = Path.of("src/test/resources/saveFile/save.txt");
         originalContent = Files.readAllLines(file);
         addContent = Collections.singletonList("Content");
