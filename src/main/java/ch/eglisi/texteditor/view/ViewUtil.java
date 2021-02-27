@@ -1,6 +1,6 @@
 package ch.eglisi.texteditor.view;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.awt.Component;
 
 public final class ViewUtil {
