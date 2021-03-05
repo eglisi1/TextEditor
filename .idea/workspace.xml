@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Set Up Maven Project">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/controller/FileHandlingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/view/TextEditorViewTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TextEditor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/FileHandling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/ViewUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/controller/FileHandlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/controller/FileHandlingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/saveFile/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/saveFile/save.txt" afterDir="false" />
     </list>
     <list id="6add4f31-d2e2-48ce-9232-a946207f38ce" name="Add Basic Swing UI" comment="" />
     <list id="9ac84a46-e55f-40f8-9eca-cdb266cd8c8a" name="Revert &quot;Add Basic Swing UI&quot;" comment="Revert &quot;Add Basic Swing UI&quot;&#10;&#10;This reverts commit 80a5278b" />
@@ -33,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,7 +66,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="proofread" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,9 +77,10 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ch.eglisi.texteditor.controller" />
+      <recent name="ch.eglisi.texteditor.view" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.clean install">
+  <component name="RunManager" selected="JUnit.FileHandlingTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.eglisi.texteditor.main.Main" />
       <module name="TextEditor" />
@@ -93,15 +94,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration name="FileHandlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.eglisi.texteditor.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.eglisi.texteditor.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.eglisi.texteditor.controller.FileHandlingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileHandlingTest.isFilenameValid_simple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.eglisi.texteditor.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.eglisi.texteditor.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.eglisi.texteditor.controller.FileHandlingTest" />
+      <option name="METHOD_NAME" value="isFilenameValid_simple" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextEditorViewTest.setText_simple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.eglisi.texteditor.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.eglisi.texteditor.view" />
+      <option name="MAIN_CLASS_NAME" value="ch.eglisi.texteditor.view.TextEditorViewTest" />
+      <option name="METHOD_NAME" value="setText_simple" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,11 +169,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.FileHandlingTest" />
+      <item itemvalue="JUnit.TextEditorViewTest.setText_simple" />
+      <item itemvalue="JUnit.FileHandlingTest.isFilenameValid_simple" />
       <item itemvalue="Maven.clean install" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileHandlingTest" />
+        <item itemvalue="JUnit.FileHandlingTest.isFilenameValid_simple" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TextEditorViewTest.setText_simple" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +197,13 @@
       <workItem from="1614330397802" duration="1793000" />
       <workItem from="1614334869319" duration="5233000" />
       <workItem from="1614344551102" duration="707000" />
-      <workItem from="1614355230833" duration="2518000" />
+      <workItem from="1614355230833" duration="7211000" />
+      <workItem from="1614419768684" duration="4521000" />
+      <workItem from="1614430423999" duration="254000" />
+      <workItem from="1614431122279" duration="346000" />
+      <workItem from="1614496534020" duration="1941000" />
+      <workItem from="1614582820215" duration="4814000" />
+      <workItem from="1614624149182" duration="3504000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up Maven Project">
       <created>1614271905166</created>
@@ -200,7 +247,42 @@
       <option name="project" value="LOCAL" />
       <updated>1614340734552</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implement Method to Save a File">
+      <created>1614357987010</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614357987010</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Error Message to User when Error occurs while choosing a File">
+      <created>1614358339697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614358339697</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Reformat Code">
+      <created>1614377959550</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614377959550</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Simplify">
+      <created>1614378675247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614378675247</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Replace with direct import">
+      <created>1614416140798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614416140798</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +307,12 @@
     <MESSAGE value="Add project Files" />
     <MESSAGE value="Add Basic Swing UI" />
     <MESSAGE value="Add Controller for Logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Controller for Logic" />
+    <MESSAGE value="Implement Method to Save a File" />
+    <MESSAGE value="Add Error Message to User when Error occurs while choosing a File" />
+    <MESSAGE value="Reformat Code" />
+    <MESSAGE value="Simplify" />
+    <MESSAGE value="Replace with direct import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace with direct import" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

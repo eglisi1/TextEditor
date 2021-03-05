@@ -28,6 +28,9 @@ class FileHandlingTest {
         addContent = Collections.singletonList("Content");
     }
 
+    /*
+        SAVE FILE
+     */
     @Test
     void saveFile_simple() throws IOException {
         expectedResult = new ArrayList<>(originalContent);
@@ -40,7 +43,41 @@ class FileHandlingTest {
     @Test
     void saveFile_null_parameters() throws IOException {
         expectedResult = new ArrayList<>(originalContent);
-        FileHandling.saveFile(null, null);
+        FileHandling.saveFile(null, (List<String>) null);
         Assertions.assertLinesMatch(Files.readAllLines(file), expectedResult);
     }
+
+    /*
+        IS FILENAME VALID
+     */
+    @Test
+    void isFilenameValid_simple() {
+        var result = FileHandling.isFilenameValid("filename.end");
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    void isFilenameValid_long_ending() {
+        var result = FileHandling.isFilenameValid("filename.ending");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void isFilenameValid_empty() {
+        var result = FileHandling.isFilenameValid("");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void isFilenameValid_null() {
+        var result = FileHandling.isFilenameValid(null);
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    void isFilenameValid_special_character() {
+        var result = FileHandling.isFilenameValid("filename$^^^.pdf");
+        Assertions.assertFalse(result);
+    }
+
 }
