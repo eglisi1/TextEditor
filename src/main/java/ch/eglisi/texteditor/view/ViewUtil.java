@@ -33,6 +33,19 @@ public final class ViewUtil {
     }
 
     /**
+     * Show a Message Dialog as Yes / No Question Message
+     * @param title Title of the Dialog
+     * @param message Message for the User
+     */
+    public static int showQuestionMessage(String title, String message) {
+        return showQuestionMessage(null, title, message);
+    }
+
+    public static int showQuestionMessage(Component parentComponent, String title, String message) {
+        return JOptionPane.showConfirmDialog(parentComponent, message, title, JOptionPane.YES_NO_OPTION);
+    }
+
+    /**
      * Show a Message Dialog
      * @param parentComponent Parent Component of the Message Dialog.
      * @param title Title of the Dialog

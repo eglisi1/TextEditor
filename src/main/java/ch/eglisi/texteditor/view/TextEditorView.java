@@ -1,6 +1,7 @@
 package ch.eglisi.texteditor.view;
 
 import ch.eglisi.texteditor.controller.FileHandling;
+import ch.eglisi.texteditor.controller.TemplateHandling;
 import ch.eglisi.texteditor.util.Util;
 
 import javax.swing.*;
@@ -60,7 +61,11 @@ public class TextEditorView extends JFrame {
         var fileMenu = new JMenu("Datei");
         menuBar.add(fileMenu);
 
-        // Create Items for File Menu
+        // Create File Menu
+        var insertMenu = new JMenu("Einfügen");
+        menuBar.add(insertMenu);
+
+        // Create Items for fileMenu (Datei)
         // create New File
         var newFile = createMenuItem("Neue Datei...", e -> createFile());
         fileMenu.add(newFile);
@@ -72,6 +77,14 @@ public class TextEditorView extends JFrame {
         fileMenu.addSeparator();
         var saveFile = createMenuItem("Datei speichern", e -> saveFile());
         fileMenu.add(saveFile);
+
+        // Create Items for File insertMenu (Einfügen)
+        // create New File
+        var insertXml = createMenuItem("XML einfügen ", e -> insertXml());
+        insertMenu.add(insertXml);
+
+        var insertHtml = createMenuItem("HTML einfügen", e -> insertHtml());
+        insertMenu.add(insertHtml);
 
         setJMenuBar(menuBar);
     }
@@ -127,9 +140,40 @@ public class TextEditorView extends JFrame {
     }
 
     private void createFile() {
+        if (text.equals("") && filePath == null && textArea.isVisible()) {
+            Integer result = ViewUtil.showQuestionMessage("Ungespeicherte Datei",
+                    "Möchtest du das File verwerfen?");
+            if (result.equals(JOptionPane.NO_OPTION)) {
+                return;
+            }
+        }
         setText("");
         setFilePath(null);
         setTextArea(true);
+        setVisible(true); // Renders the GUI again so the TextArea is visible
+    }
+
+    private void insertXml() {
+        insertTemplate("xml");
+    }
+
+    private void insertHtml() {
+        insertTemplate("html");
+    }
+
+    private void insertTemplate(String extension) {
+        if (getText() == null || getText().isEmpty()) {
+            switch (extension) {
+                case "xml":
+                    setText(TemplateHandling.readXmlTemplate());
+                    break;
+                case "html":
+                    setText(TemplateHandling.readHtmlTemplate());
+                    break;
+                default:
+
+            }
+        }
     }
 
     /**
@@ -137,7 +181,8 @@ public class TextEditorView extends JFrame {
      * @param text that shall be set
      */
     public void setText(String text) {
-        this.text = Objects.requireNonNullElse(text, "");
+        this.text = text;
+        textArea.setText(Objects.requireNonNullElse(text, ""));
     }
 
     public String getText() {
