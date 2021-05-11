@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Save File">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/TemplateHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch/eglisi/texteditor/controller/TemplateHandlingTest.java" afterDir="false" />
+    <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Add Support to insert templates (xml, html)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/ToolsHandling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/ViewUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/ViewUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/saveFile/save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/saveFile/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/saveFile/save.txt" afterDir="false" />
     </list>
     <list id="6add4f31-d2e2-48ce-9232-a946207f38ce" name="Add Basic Swing UI" comment="" />
     <list id="9ac84a46-e55f-40f8-9eca-cdb266cd8c8a" name="Revert &quot;Add Basic Swing UI&quot;" comment="Revert &quot;Add Basic Swing UI&quot;&#10;&#10;This reverts commit 80a5278b" />
@@ -27,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,15 +95,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,7 +234,8 @@
       <workItem from="1619296221974" duration="55000" />
       <workItem from="1620372530920" duration="84000" />
       <workItem from="1620372640371" duration="2445000" />
-      <workItem from="1620562564543" duration="1340000" />
+      <workItem from="1620562564543" duration="1694000" />
+      <workItem from="1620649297665" duration="3501000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up Maven Project">
       <created>1614271905166</created>
@@ -329,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614957475539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add Support to insert templates (xml, html)">
+      <created>1620563988924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620563988924</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add Support to insert templates (xml, html)">
+      <created>1620564011685</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620564011685</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +366,8 @@
     <MESSAGE value="Simplify" />
     <MESSAGE value="Replace with direct import" />
     <MESSAGE value="Save File" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save File" />
+    <MESSAGE value="Add Support to insert templates (xml, html)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Support to insert templates (xml, html)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
