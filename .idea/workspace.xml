@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Add Support to insert templates (xml, html)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/controller/ToolsHandling.java" afterDir="false" />
+    <list default="true" id="509e38df-93c0-484a-86ce-d3a89962ab7d" name="Default Changelist" comment="Get Statistics about text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/eglisi/texteditor/view/TextEditorView.java" afterDir="false" />
     </list>
@@ -235,7 +234,7 @@
       <workItem from="1620372530920" duration="84000" />
       <workItem from="1620372640371" duration="2445000" />
       <workItem from="1620562564543" duration="1694000" />
-      <workItem from="1620649297665" duration="3501000" />
+      <workItem from="1620649297665" duration="4321000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up Maven Project">
       <created>1614271905166</created>
@@ -335,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620564011685</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Get Statistics about text">
+      <created>1620720216356</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620720216356</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +373,8 @@
     <MESSAGE value="Replace with direct import" />
     <MESSAGE value="Save File" />
     <MESSAGE value="Add Support to insert templates (xml, html)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Support to insert templates (xml, html)" />
+    <MESSAGE value="Get Statistics about text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get Statistics about text" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

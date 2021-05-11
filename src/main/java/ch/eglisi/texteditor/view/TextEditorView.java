@@ -6,10 +6,6 @@ import ch.eglisi.texteditor.controller.ToolsHandling;
 import ch.eglisi.texteditor.util.Util;
 
 import javax.swing.*;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultHighlighter;
-import javax.swing.text.Highlighter;
-import java.awt.*;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -26,9 +22,6 @@ public class TextEditorView extends JFrame {
 
     private final JTextArea textArea = new JTextArea(text);
     private final JScrollPane scrollPane = new JScrollPane(textArea);
-
-    private Highlighter highlighter = textArea.getHighlighter();
-    private Highlighter.HighlightPainter yellowHighlihter = new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW);
 
     private static final Logger LOGGER = Util.getLogger(TextEditorView.class);
 
@@ -98,9 +91,6 @@ public class TextEditorView extends JFrame {
         insertMenu.add(insertHtml);
 
         // Create Items for Tools Menu (Werkzeuge)
-        var searchItem = createMenuItem("Suchen", e -> search());
-        toolsMenu.add(searchItem);
-
         var statisticsItem = createMenuItem("Statistik", e -> showStatistics());
         toolsMenu.add(statisticsItem);
 
@@ -191,20 +181,6 @@ public class TextEditorView extends JFrame {
                 default:
 
             }
-        }
-    }
-
-    /**
-     * Searches a Word and Highlights all the matches.
-     */
-    private void search() {
-        try {
-            int p0 = 0;
-            int p1 = 10;
-            highlighter.addHighlight(p0, p1, yellowHighlihter);
-            highlighter.addHighlight(15, 20, yellowHighlihter);
-        } catch (BadLocationException e) {
-            System.out.println(e.getMessage());
         }
     }
 
